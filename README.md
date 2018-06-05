@@ -1,5 +1,8 @@
 # Product Name : Coming Soon Landing Page
 
+## Description
+A simple Coming Soon landing page made with HTML5, Sass and jquery. 
+
 ## Meta
 Jeandre Melaria – j.melaria@hotmail.com
 
