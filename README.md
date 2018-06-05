@@ -1,11 +1,11 @@
-# Product Name : Web Development Starter pack - 2K18
+# Product Name : Coming Soon Landing Page
 
 ## Meta
 Jeandre Melaria – j.melaria@hotmail.com
 
 Distributed under the MIT License. See ``LICENSE`` for more information.
 
-[https://github.com/jeandremelaria/web-development-starterpack-2018.git](https://github.com/jeandremelaria/)
+[https://github.com/jeandremelaria/landing-page--coming-soon.git](https://github.com/jeandremelaria/)
 
 ## Contributing
 
