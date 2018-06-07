@@ -25,15 +25,24 @@ header {
   margin-left:-1rem;
   background-color:rgba(0, 0, 0, 0.5);
 
+  &Hours, &Minutes,&Seconds {
+    border-left:$white 0.5px solid;
+    margin-left:0.4rem;
+  }
+
   &Days, &Hours, &Minutes, &Seconds {
     display: inline-block;
-    padding: 0.3rem 0.3rem 0 0.4rem;
+    text-align: center;
+    padding: 0.3rem 0.1rem 0 0.1rem;
+    width: ($width + 0.1rem);
     color:$white;
+    
 
     &--title {
       text-transform: uppercase;
-      font-size:($fontSize - 1.2rem);
+      font-size:($fontSize - 1.35rem);
       font-weight: $fontWeight;
+      margin-left:0.4rem;
     }
     &--value {
       font-size:($fontSize - 0.3rem);
