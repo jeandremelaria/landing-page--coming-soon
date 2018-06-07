@@ -1,9 +1,9 @@
 // Home specific styles 
 body {
-  background-image: url("../img/Bg.jpg");
+  background-image: url($bgImg);
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center center;
-  height:20rem;
+  height:$bgHeight;
   overflow-y: hidden;
 }

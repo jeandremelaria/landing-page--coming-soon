@@ -108,6 +108,7 @@ input, select {
   vertical-align: middle;
 }
 
+/* Background */
 body {
   background-image: url("../img/Bg.jpg");
   background-repeat: no-repeat;
