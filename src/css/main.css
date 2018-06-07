@@ -109,6 +109,8 @@ input, select {
 }
 
 /* Background */
+/* Font */
+/* Margin */
 body {
   background-image: url("../img/Bg.jpg");
   background-repeat: no-repeat;
@@ -116,5 +118,21 @@ body {
   background-position: center center;
   height: 20rem;
   overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: "Raleway", Calibri, Arial, sans-serif;
 }
+
+header {
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  margin: 4rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.col-12 {
+  width: 400%;
+}
+
+/* Media queries */
 /*# sourceMappingURL=main.css.map */

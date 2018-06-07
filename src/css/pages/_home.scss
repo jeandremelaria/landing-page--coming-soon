@@ -6,4 +6,17 @@ body {
   background-position: center center;
   height:$bgHeight;
   overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: $fontFamily;
 }
+header {
+  display: block;
+  color:#fff;
+  font-size:$fontSize;
+  margin:($margin + 2rem) 0 ($margin - 0.5rem) 0;
+  text-align: center;
+}
+.col-12 {
+  width:400%;
+}
+
