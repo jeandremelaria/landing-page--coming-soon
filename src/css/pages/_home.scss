@@ -11,12 +11,36 @@ body {
 }
 header {
   display: block;
-  color:#fff;
+  color:$white;
   font-size:$fontSize;
   margin:($margin + 2rem) 0 ($margin - 0.5rem) 0;
   text-align: center;
 }
-.col-12 {
-  width:400%;
+.countdownTimer {
+  border: $white 2px solid;
+  padding: $padding;
+  height: $height;
+  border-radius:5px;
+  width: 15.2rem;
+  margin-left:-1rem;
+  background-color:rgba(0, 0, 0, 0.5);
+
+  &Days, &Hours, &Minutes, &Seconds {
+    display: inline-block;
+    padding: 0.3rem 0.3rem 0 0.4rem;
+    color:$white;
+
+    &--title {
+      text-transform: uppercase;
+      font-size:($fontSize - 1.2rem);
+      font-weight: $fontWeight;
+    }
+    &--value {
+      font-size:($fontSize - 0.3rem);
+      text-align: center;
+    }
+  }
+
+
 }
 

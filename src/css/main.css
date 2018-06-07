@@ -109,14 +109,17 @@ input, select {
 }
 
 /* Background */
+/* Colors */
 /* Font */
 /* Margin */
+/* Padding */
+/* Height */
 body {
   background-image: url("../img/Bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 20rem;
+  height: 100vh;
   overflow-y: hidden;
   overflow-x: hidden;
   font-family: "Raleway", Calibri, Arial, sans-serif;
@@ -130,8 +133,31 @@ header {
   text-align: center;
 }
 
-.col-12 {
-  width: 400%;
+.countdownTimer {
+  border: #fff 2px solid;
+  padding: 0.5rem;
+  height: 4rem;
+  border-radius: 5px;
+  width: 15.2rem;
+  margin-left: -1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.countdownTimerDays, .countdownTimerHours, .countdownTimerMinutes, .countdownTimerSeconds {
+  display: inline-block;
+  padding: 0.3rem 0.3rem 0 0.4rem;
+  color: #fff;
+}
+
+.countdownTimerDays--title, .countdownTimerHours--title, .countdownTimerMinutes--title, .countdownTimerSeconds--title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.countdownTimerDays--value, .countdownTimerHours--value, .countdownTimerMinutes--value, .countdownTimerSeconds--value {
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 /* Media queries */
