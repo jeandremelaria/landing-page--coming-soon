@@ -1,4 +1,4 @@
-// Home specific styles 
+/* Home specific styles */
 body {
   background-image: url($bgImg);
   background-repeat:no-repeat;
@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   font-family: $fontFamily;
 }
+// Header
 header {
   display: block;
   color:$white;
@@ -16,40 +17,15 @@ header {
   margin:($margin + 2rem) 0 ($margin - 0.5rem) 0;
   text-align: center;
 }
-.countdownTimer {
-  border: $white 2px solid;
-  padding: $padding;
-  height: $height;
-  border-radius:5px;
-  width: 15.2rem;
-  margin-left:-1rem;
-  background-color:rgba(0, 0, 0, 0.5);
 
-  &Hours, &Minutes,&Seconds {
-    border-left:$white 0.5px solid;
-    margin-left:0.4rem;
+// Footer
+footer {
+  color:$white;
+  font-size: ($fontSize - 1.2rem);
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color:$purple;
   }
-
-  &Days, &Hours, &Minutes, &Seconds {
-    display: inline-block;
-    text-align: center;
-    padding: 0.3rem 0.1rem 0 0.1rem;
-    width: ($width + 0.1rem);
-    color:$white;
-    
-
-    &--title {
-      text-transform: uppercase;
-      font-size:($fontSize - 1.35rem);
-      font-weight: $fontWeight;
-      margin-left:0.4rem;
-    }
-    &--value {
-      font-size:($fontSize - 0.3rem);
-      text-align: center;
-    }
-  }
-
-
 }
-
