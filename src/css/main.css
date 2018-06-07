@@ -9,6 +9,10 @@ Project type: Coming Soon Page
 File created date: 05.06.2018
 Last modified: 
  */
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -102,5 +106,13 @@ hr {
 
 input, select {
   vertical-align: middle;
+}
+
+body {
+  background-image: url("../img/Bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 6rem;
 }
 /*# sourceMappingURL=main.css.map */
