@@ -50,6 +50,8 @@ Last modified:
                      <main>
                     <!-- Count Down Timer -->
                     <div class="countdownTimer">
+                        <!-- @TODO: DISPLAY MESSAGE WHEN COUNTDOWN EXPIRES-->
+                        <!-- <div class="countdownTimerMessage">aaa</div> -->
                         <div class="countdownTimerDays">
                             <div class="countdownTimerDays--title">Days</div>
                             <div id="countdownTimerDaysValue" class="countdownTimerDays--value">931</div>
@@ -72,11 +74,11 @@ Last modified:
                     <!-- Newsletter -->
                     <div class="newsletter">
                         <h4>Be the first to <strong>Know</strong> when the website is ready!</h4>
-                        <form action="#">
+                        <form id="contactForm" action="#">
                             <div class="formInput">
-                                <input class="emailInput" type="text" placeholder="Email">
+                                <input id="email" class="emailInput" type="text" placeholder="Email" required>
                                 <!-- <input class=" btn emailBtn" type="submit" value="Subscribe"> -->
-                                <button class="btn btn-sm btn-light">Subscribe</button>
+                                <button type="submit" class="btn btn-sm btn-light">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -106,6 +108,8 @@ Last modified:
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- Particles js-->
     <script src="../node_modules/particles.js/particles.js"></script>
+    <!-- Firebase js -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
     <!-- Costum js-->
     <script src="js/main.js"></script>
 </body>
