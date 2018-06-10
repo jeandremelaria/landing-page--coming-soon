@@ -131,7 +131,7 @@ header {
   display: block;
   color: #fff;
   font-size: 2rem;
-  margin: 4rem 0 1.5rem 0;
+  margin: 6rem 0 1.5rem 0;
   text-align: center;
 }
 
@@ -154,7 +154,7 @@ footer a {
     height: 4rem;
     border-radius: 5px;
     width: 15.2rem;
-    margin-left: -1rem;
+    margin-left: -1.2rem;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .countdownTimerHours, .countdownTimerMinutes, .countdownTimerSeconds {
