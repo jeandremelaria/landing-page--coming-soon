@@ -74,10 +74,10 @@ Last modified:
                     <!-- Newsletter -->
                     <div class="newsletter">
                         <h4>Be the first to <strong>Know</strong> when the website is ready!</h4>
-                        <form id="contactForm" action="#">
+                        <form id="contactForm" method="POST" action="#">
+                            <div id="alertMessage"></div>
                             <div class="formInput">
-                                <input id="email" class="emailInput" type="text" placeholder="Email" required>
-                                <!-- <input class=" btn emailBtn" type="submit" value="Subscribe"> -->
+                                <input id="email" class="emailInput" type="email" placeholder="Email" required>
                                 <button type="submit" class="btn btn-sm btn-light">Subscribe</button>
                             </div>
                         </form>

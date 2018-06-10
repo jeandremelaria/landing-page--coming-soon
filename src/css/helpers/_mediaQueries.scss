@@ -42,6 +42,19 @@
   
 // Newsletter
 .newsletter {
+  .alertMessage--succes {
+    text-align: center;
+    padding: $padding;
+    background:$green;
+    color:$white;
+    margin-bottom: ($margin - 1.5rem);
+    border-radius:5px;
+  }
+  .alertMessage--failed {
+    @extend .alertMessage--succes;
+    background:$red;
+  }
+  
   padding:$padding;
   color:$white;
   margin: ($margin + 1rem) 0 $margin 0;

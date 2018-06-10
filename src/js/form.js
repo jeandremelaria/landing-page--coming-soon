@@ -20,9 +20,22 @@ function submitForm (e){
 
   // Get values
   var email = getInputVal("email");
-
+  
   // Save message
   saveMessage(email);
+
+  // Show Alert message
+  var alertMessage = document.getElementById("alertMessage");
+  alertMessage.classList.add("alertMessage--succes");
+  alertMessage.innerHTML = "Your message has been sent!";
+
+  // Hide Alert message
+  setTimeout(function(){
+    document.getElementById("alertMessage").style.display = "none";
+  }, 3000);
+
+  // Clear form 
+  document.getElementById("contactForm").reset();
 }
 
 // Function to get form values

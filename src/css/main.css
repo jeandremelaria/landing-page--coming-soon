@@ -184,6 +184,17 @@ footer a {
     margin: 3rem 0 2rem 0;
     text-align: center;
   }
+  .newsletter .alertMessage--succes, .newsletter .alertMessage--failed {
+    text-align: center;
+    padding: 0.5rem;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  .newsletter .alertMessage--failed {
+    background: red;
+  }
   .newsletter h4 {
     margin: 0 0 0.7rem 0;
   }
