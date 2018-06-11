@@ -25,7 +25,7 @@ gulp.task('img', () =>
 //---- GULP PREFIXER AND CSS NANO ----//
 gulp.task('prefixerAndCssNano', function() {
     return gulp.src('src/css/*.css')
-        .pipe(postcss([autoprefixer()]))
+        .pipe(postcss([autoprefixer('last 2 versions')]))
         .pipe(cssnano())
         .pipe(concat('main.css'))
         .pipe(gulp.dest('build/css'));
