@@ -1,1 +1,31 @@
-// Home specific styles 
+/* Home specific styles */
+body {
+  background-image: url($bgImg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:$bgHeight;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: $fontFamily;
+}
+// Header
+header {
+  display: block;
+  color:$white;
+  font-size:$fontSize;
+  margin:($margin + 4rem) 0 ($margin - 0.5rem) 0;
+  text-align: center;
+}
+
+// Footer
+footer {
+  color:$white;
+  font-size: ($fontSize - 1.2rem);
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color:$purple;
+  }
+}

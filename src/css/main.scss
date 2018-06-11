@@ -1,38 +1,17 @@
 /* 
 Developer name: Jeandre Melaria
-Project title: 
-Platform: 
-Programming language: 
-IDE tool: 
-Database:  -
-Project type: .
-File created date:
+Project title: Jeandre Melaria | Coming Soon
+Platform: Bootstrap
+Programming language: HTML5, CSS3, Bootstrap, Sass
+IDE tool: Visual Studio Code
+Database:  Firebase
+Project type: Coming Soon Page
+File created date: 05.06.2018
 Last modified: 
  */
- .logo {
-  width: 150px;
-  display: block;
-  margin: 0 auto;
-}
-body {
-  background-color: #f7f6f6;
-}
-h1 {
-  color: #a14c9d;
-  margin-left: 1.5rem;
-}
-h4 {
-  color: grey;
-  margin-left: 4.5rem;
-}
-ul {
-  list-style: none;
-  padding: 3rem;
-  width: 300px;
-  display: block;
-  position: relative;
-  margin: 5rem auto;
-}
-a {
-  text-decoration: none;
-}
+
+ @import "base/_reset.scss";
+ @import "helpers/_variables.scss";
+ @import "components/_preloader.scss";
+ @import "pages/_home.scss";
+ @import "helpers/_mediaQueries.scss";
