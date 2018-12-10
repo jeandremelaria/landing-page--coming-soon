@@ -8,7 +8,7 @@
   height: $height;
   border-radius:5px;
   width: 15.2rem;
-  margin-left:-1.2rem;
+  margin-left:-1rem;
   margin-top:($margin + 1.5rem);
   background-color:rgba(0, 0, 0, 0.5);
 
@@ -92,7 +92,7 @@
       background-color:	$purple;
       color:$white;
     }
-   }
+  }
 }
 
 }
@@ -201,8 +201,8 @@
 
 @media only screen and (min-width: 377px) and (max-width: 426px) {
 
-   // Countdown Timer
-   .countdownTimer   {
+  // Countdown Timer
+  .countdownTimer   {
     border: $white 2px solid;
     padding: $padding;
     height: $height;
@@ -307,8 +307,8 @@
       font-size:($fontSize + 0.5rem);
     }
   }
-   // Countdown Timer
-   .countdownTimer   {
+  // Countdown Timer
+  .countdownTimer   {
     border: $white 2px solid;
     padding: $padding;
     height: $height;
@@ -415,8 +415,8 @@
         font-size:($fontSize + 1rem);
       }
     }
-     // Countdown Timer
-     .countdownTimer   {
+    // Countdown Timer
+    .countdownTimer   {
       border: $white 2px solid;
       padding: $padding;
       height: ($height + 0.3rem);
@@ -515,7 +515,7 @@
       }
     }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+@media only screen and (min-width: 1025px) and (max-width: 1367px) {
 
     // Header
     header {
@@ -523,8 +523,8 @@
         font-size:($fontSize + 1rem);
       }
     }
-     // Countdown Timer
-     .countdownTimer   {
+    // Countdown Timer
+    .countdownTimer   {
       border: $white 2px solid;
       padding: $padding;
       height: ($height + 0.3rem);
@@ -626,16 +626,16 @@
       font-size:($fontSize - 1rem);
     }
 }
-@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+@media only screen and (min-width: 1368px) and (max-width: 1440px) {
 
-     // Header
-     header {
+    // Header
+    header {
       h1 {
         font-size:($fontSize + 1rem);
       }
     }
-     // Countdown Timer
-     .countdownTimer   {
+    // Countdown Timer
+    .countdownTimer   {
       border: $white 2px solid;
       padding: $padding;
       height: ($height + 0.3rem);
@@ -742,12 +742,13 @@
 
     // Header
     header {
+      margin-top:10rem!important;
       h1 {
         font-size:($fontSize + 1rem);
       }
     }
-     // Countdown Timer
-     .countdownTimer   {
+    // Countdown Timer
+    .countdownTimer   {
       border: $white 2px solid;
       padding: $padding;
       height: ($height + 0.3rem);
@@ -849,4 +850,119 @@
     footer {
       font-size:($fontSize - 1rem);
     }
+}
+
+@media only screen and (min-width: 2559px) {
+
+  // Header
+  header {
+    margin-top:20rem!important;
+    h1 {
+      font-size:($fontSize + 2rem);
+    }
+  }
+  // Countdown Timer
+  .countdownTimer   {
+    border: $white 2px solid;
+    padding: $padding;
+    height: ($height + 1rem);
+    border-radius:5px;
+    width: 30rem;
+    margin-left:50rem;
+    margin-top:($margin + 1.5rem);
+    background-color:rgba(0, 0, 0, 0.5);
+
+    &Hours, &Minutes,&Seconds {
+      border-left:$white 0.5px solid;
+      margin-left:0.4rem;
+    }
+
+    &Days, &Hours, &Minutes, &Seconds {
+      display: inline-block;
+      text-align: center;
+      padding: 0.3rem 0.1rem 0 0.1rem;
+      width: ($width + 3.8rem);
+      color:$white;
+
+      &--title {
+        text-transform: uppercase;
+        font-size:($fontSize - 0.5rem);
+        font-weight: $fontWeight;
+        margin-left:0.4rem;
+      }
+
+      &--value {
+        font-size:($fontSize - 0.1rem);
+        text-align: center;
+      }
+    }
+  } 
+  // Newsletter
+  .newsletter {
+    .alertMessage--succes {
+      text-align: center;
+      padding: $padding;
+      background:$green;
+      color:$white;
+      margin-bottom: ($margin - 1.5rem);
+      border-radius:5px;
+      margin-left: ($margin + 28.8rem);
+      width:($width + 20rem);
+    }
+    .alertMessage--failed {
+      text-align: center;
+      padding: $padding;
+      color:$white;
+      margin-bottom: ($margin - 1.5rem);
+      border-radius:5px;
+      background:$red;
+    }
+
+    padding:$padding;
+    color:$white;
+    margin: ($margin + 1rem) 0 $margin 0;
+    text-align: center;
+
+    h4 {
+      margin: 3rem 0 ($margin - 0.5rem) 0;
+      font-size:$fontSize;
+    }
+
+    .emailInput {
+      width:($width + 15rem);
+      height:($height - 2rem);
+      background-color:rgba(255,255,255,0.5);
+      border-color:rgba(255,255,255,0.5);
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border:none;
+      padding-left:0.5rem;
+      color:$white;
+      &::placeholder {
+        color:$white;
+      }
+      &:text {
+        color:$white;
+      }
+    
+    }
+    button {
+      height:($height - 2rem);
+      margin-left:-0.3rem;
+      border-top-left-radius:0;
+      border-bottom-left-radius: 0;
+      background-color:	rgba(148, 59, 135, 0.7);
+      border:none;
+      color:$white;
+
+      &:hover {
+        background-color:	$purple;
+        color:$white;
+      }
+    }
+  }
+
+  footer {
+    font-size:($fontSize - 0.5rem);
+  }
 }
