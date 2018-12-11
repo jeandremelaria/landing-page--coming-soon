@@ -427,6 +427,20 @@ footer a {
   }
 }
 
+/* ========================================== MIN-WIDTH 700 PX ========================================== */
+@media only screen and (min-width: 700px) {
+  .countdownTimer {
+    margin-left: 9.2rem;
+  }
+}
+
+/* ========================================== MIN-WIDTH 745 PX ========================================== */
+@media only screen and (min-width: 745px) {
+  .countdownTimer {
+    margin-left: 10.2rem;
+  }
+}
+
 /* ========================================== MIN-WIDTH 768 PX ========================================== */
 @media only screen and (min-width: 768px) {
   header {
