@@ -230,6 +230,13 @@
   }
 }
 
+/* ========================================== MIN-WIDTH 425 PX ========================================== */
+@media only screen and (min-width: 471px){
+  .countdownTimer {
+    margin-left:3rem;
+  }
+}
+
 /* ========================================== MIN-WIDTH 768 PX ========================================== */
 @media only screen and (min-width: 768px) {
   // Header
