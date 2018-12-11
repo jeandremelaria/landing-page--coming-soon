@@ -1,4 +1,6 @@
 /* Media queries */
+
+/* ========================================== MAX-WIDTH 320 PX ========================================== */
 @media only screen and (max-width: 320px) {
 
 // Countdown Timer
@@ -97,872 +99,1091 @@
 
 }
 
-@media only screen and (min-width:321px) and (max-width:376px){
-
+/* ========================================== MIN-WIDTH 321 PX ========================================== */
+@media only screen and (min-width: 321px) {
+  
   // Countdown Timer
-  .countdownTimer   {
-    border: $white 2px solid;
-    padding: $padding;
-    height: $height;
-    border-radius:5px;
-    width: 18.5rem;
-    margin-left:-1.2rem;
-    margin-top:($margin + 1.5rem);
-    background-color:rgba(0, 0, 0, 0.5);
+.countdownTimer {
+  border: $white 2px solid;
+  padding: $padding;
+  height: $height;
+  border-radius:5px;
+  width: 15.2rem;
+  margin-left:-1rem;
+  margin-top:($margin + 1.5rem);
+  background-color:rgba(0, 0, 0, 0.5);
 
-    &Hours, &Minutes,&Seconds {
-      border-left:$white 0.5px solid;
+  &Hours, &Minutes,&Seconds {
+    border-left:$white 0.5px solid;
+    margin-left:0.4rem;
+  }
+
+  &Days, &Hours, &Minutes, &Seconds {
+    display: inline-block;
+    text-align: center;
+    padding: 0.3rem 0.1rem 0 0.1rem;
+    width: ($width + 0.1rem);
+    color:$white;
+
+    &--title {
+      text-transform: uppercase;
+      font-size:($fontSize - 1.35rem);
+      font-weight: $fontWeight;
       margin-left:0.4rem;
     }
 
-    &Days, &Hours, &Minutes, &Seconds {
-      display: inline-block;
+    &--value {
+      font-size:($fontSize - 0.3rem);
       text-align: center;
-      padding: 0.3rem 0.1rem 0 0.1rem;
-      width: ($width + 0.85rem);
-      color:$white;
-
-      &--title {
-        text-transform: uppercase;
-        font-size:($fontSize - 1.35rem);
-        font-weight: $fontWeight;
-        margin-left:0.4rem;
-      }
-
-      &--value {
-        font-size:($fontSize - 0.3rem);
-        text-align: center;
-      }
-    }
-  } 
-  // Newsletter
-  .newsletter {
-    .alertMessage--succes {
-      text-align: center;
-      padding: $padding;
-      background:$green;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-    }
-    .alertMessage--failed {
-      text-align: center;
-      padding: $padding;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      background:$red;
-    }
-
-    padding:$padding;
-    color:$white;
-    margin: ($margin + 1rem) 0 $margin 0;
-    text-align: center;
-
-    h4 {
-      margin: 0 0 ($margin - 1.3rem) 0;
-    }
-
-    .emailInput {
-      width:($width + 7rem);
-      height:($height - 2rem);
-      background-color:rgba(255,255,255,0.5);
-      border-color:rgba(255,255,255,0.5);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border:none;
-      padding-left:0.5rem;
-      color:$white;
-      &::placeholder {
-        color:$white;
-      }
-      &:text {
-        color:$white;
-      }
-    
-    }
-    button {
-      height:($height - 2rem);
-      margin-left:-0.3rem;
-      border-top-left-radius:0;
-      border-bottom-left-radius: 0;
-      background-color:	rgba(148, 59, 135, 0.7);
-      border:none;
-      color:$white;
-
-      &:hover {
-        background-color:	$purple;
-        color:$white;
-      }
     }
   }
-
 } 
-
-@media only screen and (min-width: 377px) and (max-width: 426px) {
-
-  // Countdown Timer
-  .countdownTimer   {
-    border: $white 2px solid;
-    padding: $padding;
-    height: $height;
-    border-radius:5px;
-    width: 21rem;
-    margin-left:-1.2rem;
-    margin-top:($margin + 1.5rem);
-    background-color:rgba(0, 0, 0, 0.5);
-
-    &Hours, &Minutes,&Seconds {
-      border-left:$white 0.5px solid;
-      margin-left:0.4rem;
-    }
-
-    &Days, &Hours, &Minutes, &Seconds {
-      display: inline-block;
-      text-align: center;
-      padding: 0.3rem 0.1rem 0 0.1rem;
-      width: ($width + 1.5rem);
-      color:$white;
-
-      &--title {
-        text-transform: uppercase;
-        font-size:($fontSize - 1.35rem);
-        font-weight: $fontWeight;
-        margin-left:0.4rem;
-      }
-
-      &--value {
-        font-size:($fontSize - 0.3rem);
-        text-align: center;
-      }
-    }
-  } 
-  // Newsletter
-  .newsletter {
-    .alertMessage--succes {
-      text-align: center;
-      padding: $padding;
-      background:$green;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      width:($width + 15rem);
-    }
-    .alertMessage--failed {
-      text-align: center;
-      padding: $padding;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      background:$red;
-    }
-
-    padding:$padding;
-    color:$white;
-    margin: ($margin + 1rem) 0 $margin 0;
+// Newsletter
+.newsletter {
+  .alertMessage--succes {
     text-align: center;
-
-    h4 {
-      margin: 0 0 ($margin - 1.3rem) 0;
-    }
-
-    .emailInput {
-      width:($width + 10rem);
-      height:($height - 2rem);
-      background-color:rgba(255,255,255,0.5);
-      border-color:rgba(255,255,255,0.5);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border:none;
-      padding-left:0.5rem;
-      color:$white;
-      &::placeholder {
-        color:$white;
-      }
-      &:text {
-        color:$white;
-      }
-    
-    }
-    button {
-      height:($height - 2rem);
-      margin-left:-0.3rem;
-      border-top-left-radius:0;
-      border-bottom-left-radius: 0;
-      background-color:	rgba(148, 59, 135, 0.7);
-      border:none;
-      color:$white;
-
-      &:hover {
-        background-color:	$purple;
-        color:$white;
-      }
-    }
-  }
-}
-@media only screen and (min-width: 427px) and (max-width: 769px) {
-  // Header
-  header {
-    h1 {
-      font-size:($fontSize + 0.5rem);
-    }
-  }
-  // Countdown Timer
-  .countdownTimer   {
-    border: $white 2px solid;
     padding: $padding;
-    height: $height;
-    border-radius:5px;
-    width: 30rem;
-    margin-left:3rem;
-    margin-top:($margin + 1.5rem);
-    background-color:rgba(0, 0, 0, 0.5);
-
-    &Hours, &Minutes,&Seconds {
-      border-left:$white 0.5px solid;
-      margin-left:0.4rem;
-    }
-
-    &Days, &Hours, &Minutes, &Seconds {
-      display: inline-block;
-      text-align: center;
-      padding: 0.3rem 0.1rem 0 0.1rem;
-      width: ($width + 3.8rem);
-      color:$white;
-
-      &--title {
-        text-transform: uppercase;
-        font-size:($fontSize - 1.35rem);
-        font-weight: $fontWeight;
-        margin-left:0.4rem;
-      }
-
-      &--value {
-        font-size:($fontSize - 0.3rem);
-        text-align: center;
-      }
-    }
-  } 
-  // Newsletter
-  .newsletter {
-    .alertMessage--succes {
-      text-align: center;
-      padding: $padding;
-      background:$green;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      margin-left: ($margin + 4.5rem);
-      width:($width + 20rem);
-    }
-    .alertMessage--failed {
-      text-align: center;
-      padding: $padding;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      background:$red;
-    }
-
-    padding:$padding;
+    background:$green;
     color:$white;
-    margin: ($margin + 1rem) 0 $margin 0;
+    margin-bottom: ($margin - 1.5rem);
+    border-radius:5px;
+  }
+  .alertMessage--failed {
     text-align: center;
-
-    h4 {
-      margin: 0 0 ($margin - 1.3rem) 0;
-    }
-
-    .emailInput {
-      width:($width + 15rem);
-      height:($height - 2rem);
-      background-color:rgba(255,255,255,0.5);
-      border-color:rgba(255,255,255,0.5);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border:none;
-      padding-left:0.5rem;
-      color:$white;
-      &::placeholder {
-        color:$white;
-      }
-      &:text {
-        color:$white;
-      }
-    
-    }
-    button {
-      height:($height - 2rem);
-      margin-left:-0.3rem;
-      border-top-left-radius:0;
-      border-bottom-left-radius: 0;
-      background-color:	rgba(148, 59, 135, 0.7);
-      border:none;
-      color:$white;
-
-      &:hover {
-        background-color:	$purple;
-        color:$white;
-      }
-    }
-  }
-}
-@media only screen and (min-width: 770px) and (max-width: 1024px) {
-
-    // Header
-    header {
-      h1 {
-        font-size:($fontSize + 1rem);
-      }
-    }
-    // Countdown Timer
-    .countdownTimer   {
-      border: $white 2px solid;
-      padding: $padding;
-      height: ($height + 0.3rem);
-      border-radius:5px;
-      width: 30rem;
-      margin-left:10rem;
-      margin-top:($margin + 1.5rem);
-      background-color:rgba(0, 0, 0, 0.5);
-  
-      &Hours, &Minutes,&Seconds {
-        border-left:$white 0.5px solid;
-        margin-left:0.4rem;
-      }
-  
-      &Days, &Hours, &Minutes, &Seconds {
-        display: inline-block;
-        text-align: center;
-        padding: 0.3rem 0.1rem 0 0.1rem;
-        width: ($width + 3.8rem);
-        color:$white;
-  
-        &--title {
-          text-transform: uppercase;
-          font-size:($fontSize - 1rem);
-          font-weight: $fontWeight;
-          margin-left:0.4rem;
-        }
-  
-        &--value {
-          font-size:($fontSize - 0.3rem);
-          text-align: center;
-        }
-      }
-    } 
-    // Newsletter
-    .newsletter {
-      .alertMessage--succes {
-        text-align: center;
-        padding: $padding;
-        background:$green;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        margin-left: ($margin + 11rem);
-        width:($width + 20rem);
-      }
-      .alertMessage--failed {
-        text-align: center;
-        padding: $padding;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        background:$red;
-      }
-  
-      padding:$padding;
-      color:$white;
-      margin: ($margin + 1rem) 0 $margin 0;
-      text-align: center;
-  
-      h4 {
-        margin: 0 0 ($margin - 1.3rem) 0;
-      }
-  
-      .emailInput {
-        width:($width + 15rem);
-        height:($height - 2rem);
-        background-color:rgba(255,255,255,0.5);
-        border-color:rgba(255,255,255,0.5);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border:none;
-        padding-left:0.5rem;
-        color:$white;
-        &::placeholder {
-          color:$white;
-        }
-        &:text {
-          color:$white;
-        }
-      
-      }
-      button {
-        height:($height - 2rem);
-        margin-left:-0.3rem;
-        border-top-left-radius:0;
-        border-bottom-left-radius: 0;
-        background-color:	rgba(148, 59, 135, 0.7);
-        border:none;
-        color:$white;
-  
-        &:hover {
-          background-color:	$purple;
-          color:$white;
-        }
-      }
-    }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1367px) {
-
-    // Header
-    header {
-      h1 {
-        font-size:($fontSize + 1rem);
-      }
-    }
-    // Countdown Timer
-    .countdownTimer   {
-      border: $white 2px solid;
-      padding: $padding;
-      height: ($height + 0.3rem);
-      border-radius:5px;
-      width: 30rem;
-      margin-left:19rem;
-      margin-top:($margin + 1.5rem);
-      background-color:rgba(0, 0, 0, 0.5);
-  
-      &Hours, &Minutes,&Seconds {
-        border-left:$white 0.5px solid;
-        margin-left:0.4rem;
-      }
-  
-      &Days, &Hours, &Minutes, &Seconds {
-        display: inline-block;
-        text-align: center;
-        padding: 0.3rem 0.1rem 0 0.1rem;
-        width: ($width + 3.8rem);
-        color:$white;
-  
-        &--title {
-          text-transform: uppercase;
-          font-size:($fontSize - 1rem);
-          font-weight: $fontWeight;
-          margin-left:0.4rem;
-        }
-  
-        &--value {
-          font-size:($fontSize - 0.3rem);
-          text-align: center;
-        }
-      }
-    } 
-    // Newsletter
-    .newsletter {
-      .alertMessage--succes {
-        text-align: center;
-        padding: $padding;
-        background:$green;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        margin-left: ($margin + 20rem);
-        width:($width + 20rem);
-      }
-      .alertMessage--failed {
-        text-align: center;
-        padding: $padding;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        background:$red;
-      }
-  
-      padding:$padding;
-      color:$white;
-      margin: ($margin + 1rem) 0 $margin 0;
-      text-align: center;
-  
-      h4 {
-        margin: 0 0 ($margin - 1.3rem) 0;
-      }
-  
-      .emailInput {
-        width:($width + 15rem);
-        height:($height - 2rem);
-        background-color:rgba(255,255,255,0.5);
-        border-color:rgba(255,255,255,0.5);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border:none;
-        padding-left:0.5rem;
-        color:$white;
-        &::placeholder {
-          color:$white;
-        }
-        &:text {
-          color:$white;
-        }
-      
-      }
-      button {
-        height:($height - 2rem);
-        margin-left:-0.3rem;
-        border-top-left-radius:0;
-        border-bottom-left-radius: 0;
-        background-color:	rgba(148, 59, 135, 0.7);
-        border:none;
-        color:$white;
-  
-        &:hover {
-          background-color:	$purple;
-          color:$white;
-        }
-      }
-    }
-    footer {
-      font-size:($fontSize - 1rem);
-    }
-}
-@media only screen and (min-width: 1368px) and (max-width: 1440px) {
-
-    // Header
-    header {
-      h1 {
-        font-size:($fontSize + 1rem);
-      }
-    }
-    // Countdown Timer
-    .countdownTimer   {
-      border: $white 2px solid;
-      padding: $padding;
-      height: ($height + 0.3rem);
-      border-radius:5px;
-      width: 30rem;
-      margin-left:21rem;
-      margin-top:($margin + 1.5rem);
-      background-color:rgba(0, 0, 0, 0.5);
-  
-      &Hours, &Minutes,&Seconds {
-        border-left:$white 0.5px solid;
-        margin-left:0.4rem;
-      }
-  
-      &Days, &Hours, &Minutes, &Seconds {
-        display: inline-block;
-        text-align: center;
-        padding: 0.3rem 0.1rem 0 0.1rem;
-        width: ($width + 3.8rem);
-        color:$white;
-  
-        &--title {
-          text-transform: uppercase;
-          font-size:($fontSize - 1rem);
-          font-weight: $fontWeight;
-          margin-left:0.4rem;
-        }
-  
-        &--value {
-          font-size:($fontSize - 0.3rem);
-          text-align: center;
-        }
-      }
-    } 
-    // Newsletter
-    .newsletter {
-      .alertMessage--succes {
-        text-align: center;
-        padding: $padding;
-        background:$green;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        margin-left: ($margin + 21.9rem);
-        width:($width + 20rem);
-      }
-      .alertMessage--failed {
-        text-align: center;
-        padding: $padding;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        background:$red;
-      }
-  
-      padding:$padding;
-      color:$white;
-      margin: ($margin + 1rem) 0 $margin 0;
-      text-align: center;
-  
-      h4 {
-        margin: 0 0 ($margin - 1.3rem) 0;
-      }
-  
-      .emailInput {
-        width:($width + 15rem);
-        height:($height - 2rem);
-        background-color:rgba(255,255,255,0.5);
-        border-color:rgba(255,255,255,0.5);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border:none;
-        padding-left:0.5rem;
-        color:$white;
-        &::placeholder {
-          color:$white;
-        }
-        &:text {
-          color:$white;
-        }
-      
-      }
-      button {
-        height:($height - 2rem);
-        margin-left:-0.3rem;
-        border-top-left-radius:0;
-        border-bottom-left-radius: 0;
-        background-color:	rgba(148, 59, 135, 0.7);
-        border:none;
-        color:$white;
-  
-        &:hover {
-          background-color:	$purple;
-          color:$white;
-        }
-      }
-    }
-
-    footer {
-      font-size:($fontSize - 1rem);
-    }
-}
-@media only screen and (min-width: 1441px) and (max-width: 1708px) {
-
-    // Header
-    header {
-      margin-top:10rem!important;
-      h1 {
-        font-size:($fontSize + 1rem);
-      }
-    }
-    // Countdown Timer
-    .countdownTimer   {
-      border: $white 2px solid;
-      padding: $padding;
-      height: ($height + 0.3rem);
-      border-radius:5px;
-      width: 30rem;
-      margin-left:27.5rem;
-      margin-top:($margin + 1.5rem);
-      background-color:rgba(0, 0, 0, 0.5);
-  
-      &Hours, &Minutes,&Seconds {
-        border-left:$white 0.5px solid;
-        margin-left:0.4rem;
-      }
-  
-      &Days, &Hours, &Minutes, &Seconds {
-        display: inline-block;
-        text-align: center;
-        padding: 0.3rem 0.1rem 0 0.1rem;
-        width: ($width + 3.8rem);
-        color:$white;
-  
-        &--title {
-          text-transform: uppercase;
-          font-size:($fontSize - 1rem);
-          font-weight: $fontWeight;
-          margin-left:0.4rem;
-        }
-  
-        &--value {
-          font-size:($fontSize - 0.3rem);
-          text-align: center;
-        }
-      }
-    } 
-    // Newsletter
-    .newsletter {
-      .alertMessage--succes {
-        text-align: center;
-        padding: $padding;
-        background:$green;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        margin-left: ($margin + 28.8rem);
-        width:($width + 20rem);
-      }
-      .alertMessage--failed {
-        text-align: center;
-        padding: $padding;
-        color:$white;
-        margin-bottom: ($margin - 1.5rem);
-        border-radius:5px;
-        background:$red;
-      }
-  
-      padding:$padding;
-      color:$white;
-      margin: ($margin + 1rem) 0 $margin 0;
-      text-align: center;
-  
-      h4 {
-        margin: 0 0 ($margin - 1.3rem) 0;
-      }
-  
-      .emailInput {
-        width:($width + 15rem);
-        height:($height - 2rem);
-        background-color:rgba(255,255,255,0.5);
-        border-color:rgba(255,255,255,0.5);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        border:none;
-        padding-left:0.5rem;
-        color:$white;
-        &::placeholder {
-          color:$white;
-        }
-        &:text {
-          color:$white;
-        }
-      
-      }
-      button {
-        height:($height - 2rem);
-        margin-left:-0.3rem;
-        border-top-left-radius:0;
-        border-bottom-left-radius: 0;
-        background-color:	rgba(148, 59, 135, 0.7);
-        border:none;
-        color:$white;
-  
-        &:hover {
-          background-color:	$purple;
-          color:$white;
-        }
-      }
-    }
-
-    footer {
-      font-size:($fontSize - 1rem);
-    }
-}
-
-@media only screen and (min-width: 2559px) {
-
-  // Header
-  header {
-    margin-top:20rem!important;
-    h1 {
-      font-size:($fontSize + 2rem);
-    }
-  }
-  // Countdown Timer
-  .countdownTimer   {
-    border: $white 2px solid;
     padding: $padding;
-    height: ($height + 1rem);
-    border-radius:5px;
-    width: 30rem;
-    margin-left:50rem;
-    margin-top:($margin + 1.5rem);
-    background-color:rgba(0, 0, 0, 0.5);
-
-    &Hours, &Minutes,&Seconds {
-      border-left:$white 0.5px solid;
-      margin-left:0.4rem;
-    }
-
-    &Days, &Hours, &Minutes, &Seconds {
-      display: inline-block;
-      text-align: center;
-      padding: 0.3rem 0.1rem 0 0.1rem;
-      width: ($width + 3.8rem);
-      color:$white;
-
-      &--title {
-        text-transform: uppercase;
-        font-size:($fontSize - 0.5rem);
-        font-weight: $fontWeight;
-        margin-left:0.4rem;
-      }
-
-      &--value {
-        font-size:($fontSize - 0.1rem);
-        text-align: center;
-      }
-    }
-  } 
-  // Newsletter
-  .newsletter {
-    .alertMessage--succes {
-      text-align: center;
-      padding: $padding;
-      background:$green;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      margin-left: ($margin + 28.8rem);
-      width:($width + 20rem);
-    }
-    .alertMessage--failed {
-      text-align: center;
-      padding: $padding;
-      color:$white;
-      margin-bottom: ($margin - 1.5rem);
-      border-radius:5px;
-      background:$red;
-    }
-
-    padding:$padding;
+    background:$green;
     color:$white;
-    margin: ($margin + 1rem) 0 $margin 0;
-    text-align: center;
-
-    h4 {
-      margin: 3rem 0 ($margin - 0.5rem) 0;
-      font-size:$fontSize;
-    }
-
-    .emailInput {
-      width:($width + 15rem);
-      height:($height - 2rem);
-      background-color:rgba(255,255,255,0.5);
-      border-color:rgba(255,255,255,0.5);
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      border:none;
-      padding-left:0.5rem;
-      color:$white;
-      &::placeholder {
-        color:$white;
-      }
-      &:text {
-        color:$white;
-      }
-    
-    }
-    button {
-      height:($height - 2rem);
-      margin-left:-0.3rem;
-      border-top-left-radius:0;
-      border-bottom-left-radius: 0;
-      background-color:	rgba(148, 59, 135, 0.7);
-      border:none;
-      color:$white;
-
-      &:hover {
-        background-color:	$purple;
-        color:$white;
-      }
-    }
+    margin-bottom: ($margin - 1.5rem);
+    border-radius:5px;
+    background:$red;
   }
 
-  footer {
-    font-size:($fontSize - 0.5rem);
+  padding:$padding;
+  color:$white;
+  margin: ($margin + 1rem) 0 $margin 0;
+  text-align: center;
+
+  h4 {
+    margin: 0 0 ($margin - 1.3rem) 0;
+  }
+
+  .emailInput {
+    width:($width + 4rem);
+    height:($height - 2rem);
+    background-color:rgba(255,255,255,0.5);
+    border-color:rgba(255,255,255,0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border:none;
+    padding-left:0.5rem;
+    color:$white;
+    &::placeholder {
+      color:$white;
+    }
+    &:text {
+      color:$white;
+    }
+  
+  }
+  button {
+    height:($height - 2rem);
+    margin-left:-0.3rem;
+    border-top-left-radius:0;
+    border-bottom-left-radius: 0;
+    background-color:	rgba(148, 59, 135, 0.7);
+    border:none;
+    color:$white;
+
+    &:hover {
+      background-color:	$purple;
+      color:$white;
+    }
   }
 }
+
+}
+
+/* ========================================== MIN-WIDTH 350 PX ========================================== */
+@media only screen and (min-width: 350px){
+  .countdownTimer {
+    margin-left:-0.2rem;
+  }
+}
+
+/* ========================================== MAX-WIDTH 375 PX ========================================== */
+// @media only screen and (min-width:321px) and (max-width:376px){
+
+//   @media only screen and (min-width:321px){
+//   // Countdown Timer
+//   .countdownTimer   {
+//     border: $white 2px solid;
+//     padding: $padding;
+//     height: $height;
+//     border-radius:5px;
+//     width: 18.5rem;
+//     margin-left:-1.2rem;
+//     margin-top:($margin + 1.5rem);
+//     background-color:rgba(0, 0, 0, 0.5);
+
+//     &Hours, &Minutes,&Seconds {
+//       border-left:$white 0.5px solid;
+//       margin-left:0.4rem;
+//     }
+
+//     &Days, &Hours, &Minutes, &Seconds {
+//       display: inline-block;
+//       text-align: center;
+//       padding: 0.3rem 0.1rem 0 0.1rem;
+//       width: ($width + 0.85rem);
+//       color:$white;
+
+//       &--title {
+//         text-transform: uppercase;
+//         font-size:($fontSize - 1.35rem);
+//         font-weight: $fontWeight;
+//         margin-left:0.4rem;
+//       }
+
+//       &--value {
+//         font-size:($fontSize - 0.3rem);
+//         text-align: center;
+//       }
+//     }
+//   } 
+//   // Newsletter
+//   .newsletter {
+//     .alertMessage--succes {
+//       text-align: center;
+//       padding: $padding;
+//       background:$green;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//     }
+//     .alertMessage--failed {
+//       text-align: center;
+//       padding: $padding;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       background:$red;
+//     }
+
+//     padding:$padding;
+//     color:$white;
+//     margin: ($margin + 1rem) 0 $margin 0;
+//     text-align: center;
+
+//     h4 {
+//       margin: 0 0 ($margin - 1.3rem) 0;
+//     }
+
+//     .emailInput {
+//       width:($width + 7rem);
+//       height:($height - 2rem);
+//       background-color:rgba(255,255,255,0.5);
+//       border-color:rgba(255,255,255,0.5);
+//       border-top-left-radius: 5px;
+//       border-bottom-left-radius: 5px;
+//       border:none;
+//       padding-left:0.5rem;
+//       color:$white;
+//       &::placeholder {
+//         color:$white;
+//       }
+//       &:text {
+//         color:$white;
+//       }
+    
+//     }
+//     button {
+//       height:($height - 2rem);
+//       margin-left:-0.3rem;
+//       border-top-left-radius:0;
+//       border-bottom-left-radius: 0;
+//       background-color:	rgba(148, 59, 135, 0.7);
+//       border:none;
+//       color:$white;
+
+//       &:hover {
+//         background-color:	$purple;
+//         color:$white;
+//       }
+//     }
+//   }
+
+// } 
+
+/* ========================================== DEVICES ========================================== */
+
+// /* ========================================== MAX-WIDTH 321 PX ========================================== */
+// @media only screen and (min-width: 320px) {
+
+//   // Countdown Timer
+//   .countdownTimer {
+//     // border: $white 2px solid;
+//     border: red 2px solid;
+//     padding: $padding;
+//     height: $height;
+//     border-radius:5px;
+//     width: 15.2rem;
+//     margin-left:-1rem;
+//     margin-top:($margin + 1.5rem);
+//     background-color:rgba(0, 0, 0, 0.5);
+  
+//     &Hours, &Minutes,&Seconds {
+//       border-left:$white 0.5px solid;
+//       margin-left:0.4rem;
+//     }
+  
+//     &Days, &Hours, &Minutes, &Seconds {
+//       display: inline-block;
+//       text-align: center;
+//       padding: 0.3rem 0.1rem 0 0.1rem;
+//       width: ($width + 0.1rem);
+//       color:$white;
+  
+//       &--title {
+//         text-transform: uppercase;
+//         font-size:($fontSize - 1.35rem);
+//         font-weight: $fontWeight;
+//         margin-left:0.4rem;
+//       }
+  
+//       &--value {
+//         font-size:($fontSize - 0.3rem);
+//         text-align: center;
+//       }
+//     }
+//   } 
+//   // Newsletter
+//   .newsletter {
+//     .alertMessage--succes {
+//       text-align: center;
+//       padding: $padding;
+//       background:$green;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//     }
+//     .alertMessage--failed {
+//       @extend .alertMessage--succes;
+//       background:$red;
+//     }
+  
+//     padding:$padding;
+//     color:$white;
+//     margin: ($margin + 1rem) 0 $margin 0;
+//     text-align: center;
+  
+//     h4 {
+//       margin: 0 0 ($margin - 1.3rem) 0;
+//     }
+  
+//     .emailInput {
+//       width:($width + 4rem);
+//       height:($height - 2rem);
+//       background-color:rgba(255,255,255,0.5);
+//       border-color:rgba(255,255,255,0.5);
+//       border-top-left-radius: 5px;
+//       border-bottom-left-radius: 5px;
+//       border:none;
+//       padding-left:0.5rem;
+//       color:$white;
+//       &::placeholder {
+//         color:$white;
+//       }
+//       &:text {
+//         color:$white;
+//       }
+    
+//     }
+//     button {
+//       height:($height - 2rem);
+//       margin-left:-0.3rem;
+//       border-top-left-radius:0;
+//       border-bottom-left-radius: 0;
+//       background-color:	rgba(148, 59, 135, 0.7);
+//       border:none;
+//       color:$white;
+  
+//       &:hover {
+//         background-color:	$purple;
+//         color:$white;
+//       }
+//     }
+//   }
+  
+//   }
+
+
+
+
+
+// @media only screen and (min-width: 377px) and (max-width: 426px) {
+
+//   // Countdown Timer
+//   .countdownTimer   {
+//     border: $white 2px solid;
+//     padding: $padding;
+//     height: $height;
+//     border-radius:5px;
+//     width: 21rem;
+//     margin-left:-1.2rem;
+//     margin-top:($margin + 1.5rem);
+//     background-color:rgba(0, 0, 0, 0.5);
+
+//     &Hours, &Minutes,&Seconds {
+//       border-left:$white 0.5px solid;
+//       margin-left:0.4rem;
+//     }
+
+//     &Days, &Hours, &Minutes, &Seconds {
+//       display: inline-block;
+//       text-align: center;
+//       padding: 0.3rem 0.1rem 0 0.1rem;
+//       width: ($width + 1.5rem);
+//       color:$white;
+
+//       &--title {
+//         text-transform: uppercase;
+//         font-size:($fontSize - 1.35rem);
+//         font-weight: $fontWeight;
+//         margin-left:0.4rem;
+//       }
+
+//       &--value {
+//         font-size:($fontSize - 0.3rem);
+//         text-align: center;
+//       }
+//     }
+//   } 
+//   // Newsletter
+//   .newsletter {
+//     .alertMessage--succes {
+//       text-align: center;
+//       padding: $padding;
+//       background:$green;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       width:($width + 15rem);
+//     }
+//     .alertMessage--failed {
+//       text-align: center;
+//       padding: $padding;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       background:$red;
+//     }
+
+//     padding:$padding;
+//     color:$white;
+//     margin: ($margin + 1rem) 0 $margin 0;
+//     text-align: center;
+
+//     h4 {
+//       margin: 0 0 ($margin - 1.3rem) 0;
+//     }
+
+//     .emailInput {
+//       width:($width + 10rem);
+//       height:($height - 2rem);
+//       background-color:rgba(255,255,255,0.5);
+//       border-color:rgba(255,255,255,0.5);
+//       border-top-left-radius: 5px;
+//       border-bottom-left-radius: 5px;
+//       border:none;
+//       padding-left:0.5rem;
+//       color:$white;
+//       &::placeholder {
+//         color:$white;
+//       }
+//       &:text {
+//         color:$white;
+//       }
+    
+//     }
+//     button {
+//       height:($height - 2rem);
+//       margin-left:-0.3rem;
+//       border-top-left-radius:0;
+//       border-bottom-left-radius: 0;
+//       background-color:	rgba(148, 59, 135, 0.7);
+//       border:none;
+//       color:$white;
+
+//       &:hover {
+//         background-color:	$purple;
+//         color:$white;
+//       }
+//     }
+//   }
+// }
+// @media only screen and (min-width: 427px) and (max-width: 769px) {
+//   // Header
+//   header {
+//     h1 {
+//       font-size:($fontSize + 0.5rem);
+//     }
+//   }
+//   // Countdown Timer
+//   .countdownTimer   {
+//     border: $white 2px solid;
+//     padding: $padding;
+//     height: $height;
+//     border-radius:5px;
+//     width: 30rem;
+//     margin-left:3rem;
+//     margin-top:($margin + 1.5rem);
+//     background-color:rgba(0, 0, 0, 0.5);
+
+//     &Hours, &Minutes,&Seconds {
+//       border-left:$white 0.5px solid;
+//       margin-left:0.4rem;
+//     }
+
+//     &Days, &Hours, &Minutes, &Seconds {
+//       display: inline-block;
+//       text-align: center;
+//       padding: 0.3rem 0.1rem 0 0.1rem;
+//       width: ($width + 3.8rem);
+//       color:$white;
+
+//       &--title {
+//         text-transform: uppercase;
+//         font-size:($fontSize - 1.35rem);
+//         font-weight: $fontWeight;
+//         margin-left:0.4rem;
+//       }
+
+//       &--value {
+//         font-size:($fontSize - 0.3rem);
+//         text-align: center;
+//       }
+//     }
+//   } 
+//   // Newsletter
+//   .newsletter {
+//     .alertMessage--succes {
+//       text-align: center;
+//       padding: $padding;
+//       background:$green;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       margin-left: ($margin + 4.5rem);
+//       width:($width + 20rem);
+//     }
+//     .alertMessage--failed {
+//       text-align: center;
+//       padding: $padding;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       background:$red;
+//     }
+
+//     padding:$padding;
+//     color:$white;
+//     margin: ($margin + 1rem) 0 $margin 0;
+//     text-align: center;
+
+//     h4 {
+//       margin: 0 0 ($margin - 1.3rem) 0;
+//     }
+
+//     .emailInput {
+//       width:($width + 15rem);
+//       height:($height - 2rem);
+//       background-color:rgba(255,255,255,0.5);
+//       border-color:rgba(255,255,255,0.5);
+//       border-top-left-radius: 5px;
+//       border-bottom-left-radius: 5px;
+//       border:none;
+//       padding-left:0.5rem;
+//       color:$white;
+//       &::placeholder {
+//         color:$white;
+//       }
+//       &:text {
+//         color:$white;
+//       }
+    
+//     }
+//     button {
+//       height:($height - 2rem);
+//       margin-left:-0.3rem;
+//       border-top-left-radius:0;
+//       border-bottom-left-radius: 0;
+//       background-color:	rgba(148, 59, 135, 0.7);
+//       border:none;
+//       color:$white;
+
+//       &:hover {
+//         background-color:	$purple;
+//         color:$white;
+//       }
+//     }
+//   }
+// }
+// @media only screen and (min-width: 770px) and (max-width: 1024px) {
+
+//     // Header
+//     header {
+//       h1 {
+//         font-size:($fontSize + 1rem);
+//       }
+//     }
+//     // Countdown Timer
+//     .countdownTimer   {
+//       border: $white 2px solid;
+//       padding: $padding;
+//       height: ($height + 0.3rem);
+//       border-radius:5px;
+//       width: 30rem;
+//       margin-left:10rem;
+//       margin-top:($margin + 1.5rem);
+//       background-color:rgba(0, 0, 0, 0.5);
+  
+//       &Hours, &Minutes,&Seconds {
+//         border-left:$white 0.5px solid;
+//         margin-left:0.4rem;
+//       }
+  
+//       &Days, &Hours, &Minutes, &Seconds {
+//         display: inline-block;
+//         text-align: center;
+//         padding: 0.3rem 0.1rem 0 0.1rem;
+//         width: ($width + 3.8rem);
+//         color:$white;
+  
+//         &--title {
+//           text-transform: uppercase;
+//           font-size:($fontSize - 1rem);
+//           font-weight: $fontWeight;
+//           margin-left:0.4rem;
+//         }
+  
+//         &--value {
+//           font-size:($fontSize - 0.3rem);
+//           text-align: center;
+//         }
+//       }
+//     } 
+//     // Newsletter
+//     .newsletter {
+//       .alertMessage--succes {
+//         text-align: center;
+//         padding: $padding;
+//         background:$green;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         margin-left: ($margin + 11rem);
+//         width:($width + 20rem);
+//       }
+//       .alertMessage--failed {
+//         text-align: center;
+//         padding: $padding;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         background:$red;
+//       }
+  
+//       padding:$padding;
+//       color:$white;
+//       margin: ($margin + 1rem) 0 $margin 0;
+//       text-align: center;
+  
+//       h4 {
+//         margin: 0 0 ($margin - 1.3rem) 0;
+//       }
+  
+//       .emailInput {
+//         width:($width + 15rem);
+//         height:($height - 2rem);
+//         background-color:rgba(255,255,255,0.5);
+//         border-color:rgba(255,255,255,0.5);
+//         border-top-left-radius: 5px;
+//         border-bottom-left-radius: 5px;
+//         border:none;
+//         padding-left:0.5rem;
+//         color:$white;
+//         &::placeholder {
+//           color:$white;
+//         }
+//         &:text {
+//           color:$white;
+//         }
+      
+//       }
+//       button {
+//         height:($height - 2rem);
+//         margin-left:-0.3rem;
+//         border-top-left-radius:0;
+//         border-bottom-left-radius: 0;
+//         background-color:	rgba(148, 59, 135, 0.7);
+//         border:none;
+//         color:$white;
+  
+//         &:hover {
+//           background-color:	$purple;
+//           color:$white;
+//         }
+//       }
+//     }
+// }
+// @media only screen and (min-width: 1025px) and (max-width: 1367px) {
+
+//     // Header
+//     header {
+//       h1 {
+//         font-size:($fontSize + 1rem);
+//       }
+//     }
+//     // Countdown Timer
+//     .countdownTimer   {
+//       border: $white 2px solid;
+//       padding: $padding;
+//       height: ($height + 0.3rem);
+//       border-radius:5px;
+//       width: 30rem;
+//       margin-left:19rem;
+//       margin-top:($margin + 1.5rem);
+//       background-color:rgba(0, 0, 0, 0.5);
+  
+//       &Hours, &Minutes,&Seconds {
+//         border-left:$white 0.5px solid;
+//         margin-left:0.4rem;
+//       }
+  
+//       &Days, &Hours, &Minutes, &Seconds {
+//         display: inline-block;
+//         text-align: center;
+//         padding: 0.3rem 0.1rem 0 0.1rem;
+//         width: ($width + 3.8rem);
+//         color:$white;
+  
+//         &--title {
+//           text-transform: uppercase;
+//           font-size:($fontSize - 1rem);
+//           font-weight: $fontWeight;
+//           margin-left:0.4rem;
+//         }
+  
+//         &--value {
+//           font-size:($fontSize - 0.3rem);
+//           text-align: center;
+//         }
+//       }
+//     } 
+//     // Newsletter
+//     .newsletter {
+//       .alertMessage--succes {
+//         text-align: center;
+//         padding: $padding;
+//         background:$green;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         margin-left: ($margin + 20rem);
+//         width:($width + 20rem);
+//       }
+//       .alertMessage--failed {
+//         text-align: center;
+//         padding: $padding;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         background:$red;
+//       }
+  
+//       padding:$padding;
+//       color:$white;
+//       margin: ($margin + 1rem) 0 $margin 0;
+//       text-align: center;
+  
+//       h4 {
+//         margin: 0 0 ($margin - 1.3rem) 0;
+//       }
+  
+//       .emailInput {
+//         width:($width + 15rem);
+//         height:($height - 2rem);
+//         background-color:rgba(255,255,255,0.5);
+//         border-color:rgba(255,255,255,0.5);
+//         border-top-left-radius: 5px;
+//         border-bottom-left-radius: 5px;
+//         border:none;
+//         padding-left:0.5rem;
+//         color:$white;
+//         &::placeholder {
+//           color:$white;
+//         }
+//         &:text {
+//           color:$white;
+//         }
+      
+//       }
+//       button {
+//         height:($height - 2rem);
+//         margin-left:-0.3rem;
+//         border-top-left-radius:0;
+//         border-bottom-left-radius: 0;
+//         background-color:	rgba(148, 59, 135, 0.7);
+//         border:none;
+//         color:$white;
+  
+//         &:hover {
+//           background-color:	$purple;
+//           color:$white;
+//         }
+//       }
+//     }
+//     footer {
+//       font-size:($fontSize - 1rem);
+//     }
+// }
+// @media only screen and (min-width: 1368px) and (max-width: 1440px) {
+
+//     // Header
+//     header {
+//       h1 {
+//         font-size:($fontSize + 1rem);
+//       }
+//     }
+//     // Countdown Timer
+//     .countdownTimer   {
+//       border: $white 2px solid;
+//       padding: $padding;
+//       height: ($height + 0.3rem);
+//       border-radius:5px;
+//       width: 30rem;
+//       margin-left:21rem;
+//       margin-top:($margin + 1.5rem);
+//       background-color:rgba(0, 0, 0, 0.5);
+  
+//       &Hours, &Minutes,&Seconds {
+//         border-left:$white 0.5px solid;
+//         margin-left:0.4rem;
+//       }
+  
+//       &Days, &Hours, &Minutes, &Seconds {
+//         display: inline-block;
+//         text-align: center;
+//         padding: 0.3rem 0.1rem 0 0.1rem;
+//         width: ($width + 3.8rem);
+//         color:$white;
+  
+//         &--title {
+//           text-transform: uppercase;
+//           font-size:($fontSize - 1rem);
+//           font-weight: $fontWeight;
+//           margin-left:0.4rem;
+//         }
+  
+//         &--value {
+//           font-size:($fontSize - 0.3rem);
+//           text-align: center;
+//         }
+//       }
+//     } 
+//     // Newsletter
+//     .newsletter {
+//       .alertMessage--succes {
+//         text-align: center;
+//         padding: $padding;
+//         background:$green;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         margin-left: ($margin + 21.9rem);
+//         width:($width + 20rem);
+//       }
+//       .alertMessage--failed {
+//         text-align: center;
+//         padding: $padding;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         background:$red;
+//       }
+  
+//       padding:$padding;
+//       color:$white;
+//       margin: ($margin + 1rem) 0 $margin 0;
+//       text-align: center;
+  
+//       h4 {
+//         margin: 0 0 ($margin - 1.3rem) 0;
+//       }
+  
+//       .emailInput {
+//         width:($width + 15rem);
+//         height:($height - 2rem);
+//         background-color:rgba(255,255,255,0.5);
+//         border-color:rgba(255,255,255,0.5);
+//         border-top-left-radius: 5px;
+//         border-bottom-left-radius: 5px;
+//         border:none;
+//         padding-left:0.5rem;
+//         color:$white;
+//         &::placeholder {
+//           color:$white;
+//         }
+//         &:text {
+//           color:$white;
+//         }
+      
+//       }
+//       button {
+//         height:($height - 2rem);
+//         margin-left:-0.3rem;
+//         border-top-left-radius:0;
+//         border-bottom-left-radius: 0;
+//         background-color:	rgba(148, 59, 135, 0.7);
+//         border:none;
+//         color:$white;
+  
+//         &:hover {
+//           background-color:	$purple;
+//           color:$white;
+//         }
+//       }
+//     }
+
+//     footer {
+//       font-size:($fontSize - 1rem);
+//     }
+// }
+// @media only screen and (min-width: 1441px) and (max-width: 1708px) {
+
+//     // Header
+//     header {
+//       margin-top:10rem!important;
+//       h1 {
+//         font-size:($fontSize + 1rem);
+//       }
+//     }
+//     // Countdown Timer
+//     .countdownTimer   {
+//       border: $white 2px solid;
+//       padding: $padding;
+//       height: ($height + 0.3rem);
+//       border-radius:5px;
+//       width: 30rem;
+//       margin-left:27.5rem;
+//       margin-top:($margin + 1.5rem);
+//       background-color:rgba(0, 0, 0, 0.5);
+  
+//       &Hours, &Minutes,&Seconds {
+//         border-left:$white 0.5px solid;
+//         margin-left:0.4rem;
+//       }
+  
+//       &Days, &Hours, &Minutes, &Seconds {
+//         display: inline-block;
+//         text-align: center;
+//         padding: 0.3rem 0.1rem 0 0.1rem;
+//         width: ($width + 3.8rem);
+//         color:$white;
+  
+//         &--title {
+//           text-transform: uppercase;
+//           font-size:($fontSize - 1rem);
+//           font-weight: $fontWeight;
+//           margin-left:0.4rem;
+//         }
+  
+//         &--value {
+//           font-size:($fontSize - 0.3rem);
+//           text-align: center;
+//         }
+//       }
+//     } 
+//     // Newsletter
+//     .newsletter {
+//       .alertMessage--succes {
+//         text-align: center;
+//         padding: $padding;
+//         background:$green;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         margin-left: ($margin + 28.8rem);
+//         width:($width + 20rem);
+//       }
+//       .alertMessage--failed {
+//         text-align: center;
+//         padding: $padding;
+//         color:$white;
+//         margin-bottom: ($margin - 1.5rem);
+//         border-radius:5px;
+//         background:$red;
+//       }
+  
+//       padding:$padding;
+//       color:$white;
+//       margin: ($margin + 1rem) 0 $margin 0;
+//       text-align: center;
+  
+//       h4 {
+//         margin: 0 0 ($margin - 1.3rem) 0;
+//       }
+  
+//       .emailInput {
+//         width:($width + 15rem);
+//         height:($height - 2rem);
+//         background-color:rgba(255,255,255,0.5);
+//         border-color:rgba(255,255,255,0.5);
+//         border-top-left-radius: 5px;
+//         border-bottom-left-radius: 5px;
+//         border:none;
+//         padding-left:0.5rem;
+//         color:$white;
+//         &::placeholder {
+//           color:$white;
+//         }
+//         &:text {
+//           color:$white;
+//         }
+      
+//       }
+//       button {
+//         height:($height - 2rem);
+//         margin-left:-0.3rem;
+//         border-top-left-radius:0;
+//         border-bottom-left-radius: 0;
+//         background-color:	rgba(148, 59, 135, 0.7);
+//         border:none;
+//         color:$white;
+  
+//         &:hover {
+//           background-color:	$purple;
+//           color:$white;
+//         }
+//       }
+//     }
+
+//     footer {
+//       font-size:($fontSize - 1rem);
+//     }
+// }
+
+// @media only screen and (min-width: 2559px) {
+
+//   // Header
+//   header {
+//     margin-top:20rem!important;
+//     h1 {
+//       font-size:($fontSize + 2rem);
+//     }
+//   }
+//   // Countdown Timer
+//   .countdownTimer   {
+//     border: $white 2px solid;
+//     padding: $padding;
+//     height: ($height + 1rem);
+//     border-radius:5px;
+//     width: 30rem;
+//     margin-left:50rem;
+//     margin-top:($margin + 1.5rem);
+//     background-color:rgba(0, 0, 0, 0.5);
+
+//     &Hours, &Minutes,&Seconds {
+//       border-left:$white 0.5px solid;
+//       margin-left:0.4rem;
+//     }
+
+//     &Days, &Hours, &Minutes, &Seconds {
+//       display: inline-block;
+//       text-align: center;
+//       padding: 0.3rem 0.1rem 0 0.1rem;
+//       width: ($width + 3.8rem);
+//       color:$white;
+
+//       &--title {
+//         text-transform: uppercase;
+//         font-size:($fontSize - 0.5rem);
+//         font-weight: $fontWeight;
+//         margin-left:0.4rem;
+//       }
+
+//       &--value {
+//         font-size:($fontSize - 0.1rem);
+//         text-align: center;
+//       }
+//     }
+//   } 
+//   // Newsletter
+//   .newsletter {
+//     .alertMessage--succes {
+//       text-align: center;
+//       padding: $padding;
+//       background:$green;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       margin-left: ($margin + 28.8rem);
+//       width:($width + 20rem);
+//     }
+//     .alertMessage--failed {
+//       text-align: center;
+//       padding: $padding;
+//       color:$white;
+//       margin-bottom: ($margin - 1.5rem);
+//       border-radius:5px;
+//       background:$red;
+//     }
+
+//     padding:$padding;
+//     color:$white;
+//     margin: ($margin + 1rem) 0 $margin 0;
+//     text-align: center;
+
+//     h4 {
+//       margin: 3rem 0 ($margin - 0.5rem) 0;
+//       font-size:$fontSize;
+//     }
+
+//     .emailInput {
+//       width:($width + 15rem);
+//       height:($height - 2rem);
+//       background-color:rgba(255,255,255,0.5);
+//       border-color:rgba(255,255,255,0.5);
+//       border-top-left-radius: 5px;
+//       border-bottom-left-radius: 5px;
+//       border:none;
+//       padding-left:0.5rem;
+//       color:$white;
+//       &::placeholder {
+//         color:$white;
+//       }
+//       &:text {
+//         color:$white;
+//       }
+    
+//     }
+//     button {
+//       height:($height - 2rem);
+//       margin-left:-0.3rem;
+//       border-top-left-radius:0;
+//       border-bottom-left-radius: 0;
+//       background-color:	rgba(148, 59, 135, 0.7);
+//       border:none;
+//       color:$white;
+
+//       &:hover {
+//         background-color:	$purple;
+//         color:$white;
+//       }
+//     }
+//   }
+
+//   footer {
+//     font-size:($fontSize - 0.5rem);
+//   }
+// }
