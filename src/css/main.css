@@ -593,8 +593,15 @@ footer a {
   }
 }
 
-/* ========================================== MIN-WIDTH 1700 PX ========================================== */
-@media only screen and (min-width: 1700px) {
+/* ========================================== MIN-WIDTH 1580 PX ========================================== */
+@media only screen and (min-width: 1580px) {
+  .countdownTimer {
+    margin-left: 24rem;
+  }
+}
+
+/* ========================================== MIN-WIDTH 1680 PX ========================================== */
+@media only screen and (min-width: 1680px) {
   .countdownTimer {
     margin-left: 27rem;
   }
