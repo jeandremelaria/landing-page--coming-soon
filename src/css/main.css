@@ -393,7 +393,7 @@ footer a {
 }
 
 /* ========================================== MIN-WIDTH 425 PX ========================================== */
-@media only screen and (min-width: 417px) {
+@media only screen and (min-width: 400px) {
   .countdownTimer {
     margin-left: 1.5rem;
   }
